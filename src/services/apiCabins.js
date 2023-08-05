@@ -1,5 +1,5 @@
-import supabase from "./superbase";
-import { supabaseUrl } from "./superbase";
+import supabase from "./supabase";
+import { supabaseUrl } from "./supabase";
 
 export async function getCabins() {
   let { data, error } = await supabase.from("cabins").select("*");
